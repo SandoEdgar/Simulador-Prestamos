@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 }
+/***************PRIMER MÓDULO******************/
 body{
 	font-family: sans-serif;
 	background-color: #efefef;
@@ -22,6 +23,7 @@ h1{
 	color:var(--color-general);
 	margin-top:30px;
 	margin-bottom: 25px;
+	text-transform: uppercase;
 }
 .date,
 .clock{
@@ -110,4 +112,45 @@ p{
 .next:hover{
 	background-color: #009E0F;
 	color:#ffffff;
+}
+
+/***************SEGUNDO MÓDULO******************/
+
+.division-one,
+.division-two{
+	width:1160px;
+}
+.phrase-one,
+.one-phrase
+{
+	width: 580px;
+	float:left;
+}
+.phrase-two,
+.two-phrase{
+	width: 580px;
+	float: right;
+	margin-top: -35px;
+	margin-right: -80px;
+}
+.division-one:after,
+.division-two:after{
+	content:'';
+	display: table;
+	clear: both;
+}
+table{
+	border:2px solid #25455A;
+	border-collapse: collapse;
+	margin:30px 5% ;
+}
+thead{
+	color:#0E4E61;
+	font-weight: 600;
+	font-size: 20px;
+}
+td{
+	border:3px solid #25455A;
+	padding:5px 50px;
+	text-align: center;
 }
