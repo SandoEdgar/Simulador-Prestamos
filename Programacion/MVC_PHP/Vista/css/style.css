@@ -1,0 +1,156 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/***************PRIMER MÓDULO******************/
+body{
+	font-family: sans-serif;
+	background-color: #efefef;
+	
+}
+:root {
+	--color-general:#0C5394;
+	--borde-color:3px solid #597EAA;
+	--tamanio-letra-box:18px;
+	--padding-box:2px;
+}
+h1{
+	font-size: 50px;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: 600;
+	color:var(--color-general);
+	margin-top:30px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+.date,
+.clock{
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+main{
+	border:5px solid var(--color-general);
+	margin:20px 100px;
+}
+.title-box{
+	border-bottom: 5px solid var(--color-general);
+	color:#ffffff;
+	background-color: #597EAA;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: normal;
+	padding:8px;
+}
+[class^="division"]{
+	border-bottom: 2px solid var(--color-general);
+}
+p{
+	font-size: 20px;
+	margin: 15px 60px;
+}
+.division-1 select,
+.division-2 input,
+.division-2 select,
+.division-3 input,
+.different input,
+.different select
+{	
+	font-size: var(--tamanio-letra-box);
+	padding: var(--padding-box);
+	border:var(--borde-color);
+}
+.division-1 select{
+	margin-left: 110px;
+}
+.division-2 input{
+	margin-left: 180px;
+	width: 120px;
+}
+.division-2 select{
+	width: 100px;
+}
+.division-3 input{
+	margin-left: 215px;
+}
+.different input{
+	margin-left: 280px;
+	width: 60px;
+}
+.clean,
+.next{
+	text-align: center;
+	font-size: 20px;
+	padding:7px 18px;
+	text-transform: uppercase;
+	margin-top: 30px;
+	color:#ffffff;
+	box-shadow: 1px 1px #888888;
+	-webkit-transition: 1.5s;
+	transition: 1.5s;
+}
+.clean{
+	background-color: #ffffff;
+	color:#E06666;
+	border:2px solid #E06666;
+	margin-left: 500px;	
+}
+.clean:hover{
+	background-color:#E06666;
+	color:#ffffff;
+}
+.next{
+	background-color: #ffffff;
+	color:#009E0F;
+	border:2px solid #009E0F;
+	margin-left: 80px;
+}
+.next:hover{
+	background-color: #009E0F;
+	color:#ffffff;
+}
+
+/***************SEGUNDO MÓDULO******************/
+
+.division-one,
+.division-two{
+	width:1160px;
+}
+.phrase-one,
+.one-phrase
+{
+	width: 580px;
+	float:left;
+}
+.phrase-two,
+.two-phrase{
+	width: 580px;
+	float: right;
+	margin-top: -35px;
+	margin-right: -80px;
+}
+.division-one:after,
+.division-two:after{
+	content:'';
+	display: table;
+	clear: both;
+}
+table{
+	border:2px solid #25455A;
+	border-collapse: collapse;
+	margin:30px 5% ;
+}
+thead{
+	color:#0E4E61;
+	font-weight: 600;
+	font-size: 20px;
+}
+td{
+	border:3px solid #25455A;
+	padding:5px 50px;
+	text-align: center;
+}
